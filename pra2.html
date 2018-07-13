@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运费详情</title>
+	<style type="text/css">
+		.top{color: #392f30; }
+		.yunfei{width:494px;font-size: 11px;line-height: 25px;border-collapse: collapse;}
+		.yunfei tr th,.yunfei tr td{border:2px solid #f0f0f0;text-align:left;padding-left:16px;}
+		.col{width: 61px;background:#f7f7f7;}
+		.row{width: 154px;background: #f7f7f7;}
+		.row1{background: #f7f7f7;}
+	</style>
+</head>
+<body>
+	<!--简单的运费模板-->
+ 	<table class="yunfei">
+ 		<caption class="top"><strong>运费详情</strong></caption>
+ 			<thead>
+ 				<tr>
+ 					<th class="col">区域</th>
+ 					<th class="row">寄达地</th>
+ 					<th class="row1">首重(元/1000g)</th>
+ 					<th class="row1">续重(元/1000g）</th>
+ 				</tr>
+ 			</thead>
+ 			<tbody>
+ 				<tr>
+ 					<th rowspan="2" class="col">一区</th>
+ 					<td>浙江、上海、江苏</td>
+ 					<td>6</td>
+ 					<td>1</td>
+ 				</tr>
+ 				<tr>
+ 					<td>江西、安徽</td>
+ 					<td>7</td>
+ 					<td>1</td>
+ 				</tr>
+ 				<tr>
+ 					<th class="col">二区</th>
+ 					<td>吉林、黑龙江、云南</td>
+ 					<td>10</td>
+ 					<td>6</td>
+ 				</tr>
+ 				<tr>
+ 					<th class="col">三区</th>
+ 					<td>新疆、西藏</td>
+ 					<td>15</td>
+ 					<td>10</td>
+ 				</tr>
+ 			</tbody>
+ 	</table>
+</body>
+</html>
