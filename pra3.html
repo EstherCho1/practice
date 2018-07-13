@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册表单</title>
+    <style type="text/css">
+        .sub_title{font-size: 18px;line-height: 63px;margin-right:40px; vertical-align: middle;}
+        #user_des{margin-left: 40px;width: 308px;height: 85px;}
+        .button{width: 123px;height: 43px;background: #d753b8;text-align: center;margin-left: 80px;margin-top: 19px;padding-top: 15px;}
+    </style>
+</head>
+<body>
+    <form id="update_profile" action="/update_profile.php" method="get">
+        <div class="input_user">
+            <label class="sub_title" for="user_pic">头像</label>
+            <input type="file" name="user.pic">
+        </div>
+        <div class="input_user">
+            <label class="sub_title" for="user_name">昵称</label>
+            <input type="text" name="user_name">
+        </div>
+        <div class="input_user">
+            <label class="sub_title" for="user_edu">学历</label>
+            <select id="user_edu">
+                <option value="1" selected>大专</option>
+                <option value="2">本科</option>
+            </select>
+        </div>
+        <div class="input_user">
+            <label class="sub_title" for="uer_sex">性别</label>
+            <input class="sex" type="radio" name="user_sex" id="sex_0"><label for="sex_0">男</label>
+            <input class="sex" type="radio" name="user_sex" id="sex_1"><label for="sex_1">女</label>
+        </div>
+        <div class="input_user">
+            <label class="sub_title" for="user_int">爱好</label>
+            <input class="int" type="checkbox" name="user_int" id="int1" checked><label for="int1">电影</label>
+            <input class="int" type="checkbox" name="user_int" id="int2"><label for="int2">摄影</label>
+            <input class="int" type="checkbox" name="user_int" id="int3"><label for="int3">音乐</label>
+            <input class="int" type="checkbox" name="user_int" id="int4" checked><label for="int4">阅读</label>
+        </div>
+        <div class="input_user">
+            <label class="sub-title" for="user_des">签名</label>
+            <textarea id="user_des" name="user_des"></textarea>
+        </div>
+        <div class="button">保&nbsp;存</div>
+    </form>
+</body>
+</html>
